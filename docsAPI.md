@@ -7,9 +7,9 @@ Request:
 - body :
   ``` json
         {
-         "full_name" : "string",
-         "email" : "string",
-         "password" : "string"
+           "full_name" : "string",
+           "email" : "string",
+           "password" : "string"
         }
   ```
 Response:
@@ -17,12 +17,12 @@ Response:
 - data :
 ```json
         {
-        "id": "integer",
-        "full_name": "string",
-        "email": "string",
-        "password": "string",
-        "balance": "integer",
-        "created_at": "date"
+          "id": "integer",
+          "full_name": "string",
+          "email": "string",
+          "password": "string",
+          "balance": "integer",
+          "created_at": "date"
         }
 ```
 #### [POST] /users/login
@@ -31,17 +31,17 @@ Request:
 - body :
   ``` json
         {
-         "email" : "string",
-         "password" : "string"
+           "email" : "string",
+           "password" : "string"
         }
   ```
 Response :
 - status 200
 - data :
 ```json
-    {
-        "token" : "jwt-string",
-    }
+        {
+            "token" : "jwt-string",
+        }
 ```
 #### [PATCH] /users/topup
 Request:
@@ -50,16 +50,16 @@ Request:
 - body :
   ``` json
         {
-         "balance" : "integer",
+           "balance" : "integer",
         }
   ```
 Response :
 - status 200
 - data:
 ```json
-    {
-        "message": "Your balance has been successfully updated to Rp <balance>"
-    }
+        {
+            "message": "Your balance has been successfully updated to Rp <balance>"
+        }
 ```
 ### Categories
 #### [POST] /categories
@@ -69,7 +69,7 @@ Request:
 - body:
   ``` json
         {
-         "type" : "string",
+           "type" : "string",
         }
   ```
 Response :
@@ -93,20 +93,20 @@ Response:
     ``` json
        [
         {
-          "id": "integer",
-          "type": "string",
-          "sold_product_amount": "integer",
-          "created_at": "date",
-          "updated_at": "date",
-          "Products": [
-            {
-              "id": "integer",
-              "title": "string",
-              "price": "integer",
-              "stock": "integer",
-              "created_at": "date",
-              "updated_at": "date"
-            },
+            "id": "integer",
+            "type": "string",
+            "sold_product_amount": "integer",
+            "created_at": "date",
+            "updated_at": "date",
+            "Products": [
+              {
+                "id": "integer",
+                "title": "string",
+                "price": "integer",
+                "stock": "integer",
+                "created_at": "date",
+                "updated_at": "date"
+              },
           ]
         }
       ]
@@ -118,19 +118,19 @@ Request:
 - body:
   ```json
         {
-          "type" : "string"
+            "type" : "string"
         }
   ```
 Response :
 - status 200
 - data : 
 ```json
-    {
-        "id": "integer",
-        "type": "string",
-        "sold_product_amount": "integer",
-        "updated_at": "date"
-    }
+        {
+            "id": "integer",
+            "type": "string",
+            "sold_product_amount": "integer",
+            "updated_at": "date"
+        }
 ```
 #### [DELETE] /categories/:categoryID
 Request:
@@ -141,9 +141,9 @@ Response:
 - status 200
 - data:
 ```json
-    {
-        "message": "Category has been successfully deleted"
-    }
+        {
+            "message": "Category has been successfully deleted"
+        }
 ```
 
 ### Products
@@ -154,24 +154,24 @@ Request:
 - body:
  ```json
         {
-          "title" : "string",
-          "price" : "integer",
-          "stock" : "integer",
-          "category_id" : "integer"
+            "title" : "string",
+            "price" : "integer",
+            "stock" : "integer",
+            "category_id" : "integer"
         }
   ```
 Response : 
 - status 201
 - data:
 ```json
-    {
-        "id": "integer",
-        "title": "string",
-        "price": "integer",
-        "stock": "integer",
-        "category_id": "integer",
-        "created_at": "date"
-    }
+        {
+            "id": "integer",
+            "title": "string",
+            "price": "integer",
+            "stock": "integer",
+            "category_id": "integer",
+            "created_at": "date"
+        }
 ```
 #### [GET] /products
 Request:
@@ -200,10 +200,10 @@ Request:
 - body:
     ```json
         {
-          "title" : "string",
-          "price" : "integer",
-          "stock" : "integer",
-          "category_id" : "integer"
+            "title" : "string",
+            "price" : "integer",
+            "stock" : "integer",
+            "category_id" : "integer"
         }
     ```
 Response :

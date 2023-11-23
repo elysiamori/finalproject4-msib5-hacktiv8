@@ -12,7 +12,7 @@ Request:
            "password" : "string"
         }
   ```
-Response:
+- Response:
 - status 201
 - data :
 ```json
@@ -35,7 +35,7 @@ Request:
            "password" : "string"
         }
   ```
-Response :
+- Response :
 - status 200
 - data :
 ```json
@@ -53,7 +53,7 @@ Request:
            "balance" : "integer",
         }
   ```
-Response :
+- Response :
 - status 200
 - data:
 ```json
@@ -72,7 +72,7 @@ Request:
            "type" : "string",
         }
   ```
-Response :
+- Response :
 - status 201
 - data:
 ```json
@@ -87,7 +87,7 @@ Request:
 - description : Get Category
 - headers : Authorization (Bearer Token String)
 
-Response:
+- Response:
 - status 200
 - data :
     ``` json
@@ -121,7 +121,7 @@ Request:
             "type" : "string"
         }
   ```
-Response :
+- Response :
 - status 200
 - data : 
 ```json
@@ -137,7 +137,7 @@ Request:
 - description : Delete Category By ID
 - headers : Authorization (Bearer Token String)
 - params : categoryID(id)
-Response:
+- Response:
 - status 200
 - data:
 ```json
@@ -160,7 +160,7 @@ Request:
             "category_id" : "integer"
         }
   ```
-Response : 
+- Response : 
 - status 201
 - data:
 ```json
@@ -177,7 +177,7 @@ Response :
 Request:
 - description : Get All Products
 - headers : Authorization (Bearer Token String)
-Response:
+- Response:
 - status 200
 - data:
  ```json
@@ -206,7 +206,7 @@ Request:
             "category_id" : "integer"
         }
     ```
-Response :
+- Response :
 - status 200
 - data : 
 ```json
@@ -227,7 +227,7 @@ Request:
 - description : Delete Product
 - headers : Authorization (Bearer Token String)
 - params : productID(integer)
-Response: 
+- Response: 
 - status 200
 - data :
 ```json
@@ -248,7 +248,7 @@ Request:
             "quantity" : "integer"
         }
     ```
-Response:
+- Response:
 - status 201
 - data :
 ```json
@@ -266,7 +266,7 @@ Response:
 Request:
 - description : Get My Transaction
 - headers : Authorization (Bearer Token String)
-Response:
+- Response:
 - status 200
 - data :
 ```json
@@ -294,7 +294,7 @@ Response:
 Request:
 - description : Get All Transactions
 - headers : Authorization (Bearer Token String)
-Response:
+- Response:
 - status 200
 - data :
 ```json

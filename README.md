@@ -3,7 +3,7 @@
 #### Tech Stack
 - Languange: Go
 - Framework : GIN
-- Database : MySQL
+- Database : PostgreSQL
 - ORM : GORM
 - Token : JWT
 - Deploy : Railway

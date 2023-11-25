@@ -9,5 +9,6 @@
 - Deploy : Railway
 
 Link : https://finalproject4-kelompok6.up.railway.app
+## Valdy Ramadhan GLNG-KS08-09 
 
   
